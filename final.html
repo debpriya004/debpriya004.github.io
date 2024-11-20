@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Simi Bug</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Happy Birthday Deb<br /></h1>
+						<h2>Congratulations for comming to Final Round</h2>
+						<audio id="backgroundMusic" loop>
+							<source src="audios\tshirt_bug.mp3" type="audio/mp3">
+							Your browser does not support the audio tag.
+						</audio>
+						<button onclick="playAudio()"><b>click here</b></button>
+						<ul class="actions">
+							<li><a href="#main" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Main -->
+					<div id="main">
+
+						<form id="login-form">
+							<h2>Answer format:  What it is ? </h2>
+							<b>(answer in lowercase)
+							<p>hint: [ (name) ], {think on my appreance}</p>
+							</b>
+							<p>
+								Dear Deb, though distance stretches between us, the days of meeting and talking as we once did have become treasured echoes. Yet, that day when our paths knowingly or unknowingly crossed remains a moment I hold close. We may not always meet in person, but our bond is woven with loyalty, respect, and the unspoken promise to stand by each other through all. For your birthday, I offer you something from that auspicious day, not my soul but a part of myself, like a horcrux, infused with the magic of that memory. What piece of me might I share?
+							</p>
+							<!-- Add this script tag to the head of your HTML file -->
+						
+						  
+							<div class="content">
+							  <div class="input-field">
+								<label for="answer">ANSWER</label>
+								<input type="text" id="answer" name="username" required>
+							  </div>
+							</div>
+							<div class="action">
+							  <button type="submit">enter</button>
+							</div>
+						</form>
+
+							<hr />
+
+					</div>
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<script>
+				document.getElementById('login-form').addEventListener('submit', function(event) {
+				event.preventDefault(); // Prevent the default form submission
+
+				var answer = document.getElementById('answer').value; // Retrieve the Warden ID
+
+				if (answer=="spider") {
+          window.location.href = "https://debpriya004.github.io/hint.html"; // Redirect to the dashboard page
+        }
+        else {
+					alert('Wrong Answer Deb');
+				}
+			});
+			</script>
+			<script>
+				function playAudio() {
+					var audio = document.getElementById('backgroundMusic');
+					audio.play();
+				}
+			</script>
+	</body>
+</html>
